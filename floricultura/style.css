@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    background: color #f9f9f9;
+}
+.menu-toggle{
+   font-size: 24px;
+    padding: 10px;
+    background-color:#e086f4;
+    color: beige;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+.slide-menu.active{
+    left: 0;
+}
+.menu-toggle.active{
+    left: 150px;
+}
+.slide-menu {
+    position: fixed;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    transition: left 0.3s ease;
+    z-index: 999;
+    left: -250px;
+
+}
+.slide-menu ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.slide-menu ul li{
+
+    padding: 8px;
+    margin-left: 8px;
+}
+.slide-menu ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+    display: block;
+}
+.slide-menu ul li a:hover{
+    background-color: #ef98f1;
+}
+.header{
+    background: url('header.jpg')no-repeat center center/cover;
+    color:rgb(0, 0, 0);
+    padding: 110px 20px;
+   text-align: center;
+}
+.flor{
+    align-items: center;
+    width: 350px;
+     height: 360px;
+     border-radius: 100%;
+}
+.banner{
+    background-color: #f9f9f9;
+    color: #d158c5;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opcity 1.0s ease, transform 1.0s ease;
+    animation: fadeInDown 1.0 forwards;
+}
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+to{
+    opacity: 1;
+    transform: translateY(0);
+    }
+        }
+        .banner p{
+            color: #e097ca;
+        }
+.content {
+    padding: 20px;
+}
+h2 {
+    color: #eb75f8;
+    margin-top: 40px;
+}
+.product-list{
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 20px;
+    justify-content: center;
+}
+.product-item{
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:10px 10px 10px#f79595;
+    text-align: center;
+    width: 200px;
+}
+.product-item img {
+    width: 100%;
+    border-radius: 80px;
+ border-radius: 10px;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color:rgb(252, 141, 219) ;
+    color: rgb(250, 189, 243);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.icone{
+    font-size: 30px;
+    color:#f9f9f9;
+}
